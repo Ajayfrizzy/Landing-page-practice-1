@@ -8,7 +8,7 @@
 }
 
 
-@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&family=Raleway:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;900&family=Raleway:wght@300;400&display=swap');
 
 * {
   margin: 0;
@@ -36,7 +36,7 @@ Body {
 .head img{
   display: block;
   margin: 0 auto;
-  padding-top: 6.8rem;
+  padding-top: 4rem;
 }
 
 p{
@@ -46,7 +46,6 @@ p{
 .history, .keep-track, .access, .super, .clipboard-container{
   text-align: center;
 }
-
 
 .history .container{
   padding-top: 20px;
@@ -104,42 +103,54 @@ button{
  text-align: justify;
 }
 
-.access, .access img{
-  margin-top: 80px;
+.access{
+  margin-top: 100px;
+}
+
+.access h2, .access p{
+  padding-top: 20px;
+}
+
+.access img{
+  width: 65%;
+  margin-top: 70px;
+
 }
 
 .super{
-  margin-bottom: 50px;
-}
-
-.after-super-container .container{
-  display: flex;
-  width: 90vw;
+  margin-top: 50px;
   margin-bottom: 100px;
 }
 
-.after-super-container h2, p{
+.after-super .container{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 100px;
+}
+
+.after-super h2, p{
   text-align: center;
 }
 
-.after-super-container img{
-  margin: 0 auto 30px;
+.after-super img{
+  margin: 0 auto;
   display: block;
+  padding-bottom: 40px;
 }
 
 .create, .plain, .sneak{
-  width: 30vw;
+  width: 28vw;
   line-height: 2em;
-  padding-right: 30px;
 }
 
-.google-image-part-container img{
+.google-image-part img{
   padding: 20px 50px;
   margin-bottom: 80px;
 }
 
-.clipboard-container .container{
+.clipboard .container{
   width: 60vw;
+  text-align: center;
   padding-bottom: 50px;
 }
 
@@ -153,7 +164,7 @@ button{
 }
 
 .logo img{
-  width: 70%;
+  width: 75%;
   padding-left: 70px;
 }
 
@@ -166,9 +177,16 @@ ul a{
   color: var(--Grayish-Blue);
 }
 
+ul a:hover{
+  color: var(--Grayish-Blue);
+  background: #000;
+  padding: 5px;
+  border-radius: 5px;
+}
+
 .faq{
   display: flex;
-  padding-right: 15em;
+  padding-right: 14em;
 }
 
 .upper-faq li, .lower-faq li{
@@ -189,7 +207,7 @@ ul a{
 }
 
 @media only screen and (max-width: 767px) {
-  .history .container, .keep-track .container, .access .container, .clipboard-container .container{
+  .history .container, .keep-track .container, .access .container, .clipboard .container{
     width: 100%;
   }
 
@@ -215,22 +233,25 @@ ul a{
     padding-left: 50px;
   }
 
-  .text h2, .text p{
+  .text{
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .text p{
     text-align: center;
   }
 
-  .img img{
-    width: 100vw;
-    margin: 20px 30px;
-    padding: 0 20px;
+  .img-2 img{
+    width: 100%;
   }
 
-  .after-super-container .container{
+  .after-super .container{
     display: block;
     padding: 20px;
   }
 
-  .after-super-container img{
+  .after-super img{
     padding-top: 30px;
   }
 
@@ -239,11 +260,11 @@ ul a{
     line-height: 0.9rem;
   }
 
-  .google-image-part-container .container{
+  .google-image-part .container{
     padding-bottom: 3rem;
   }
 
-  .google-image-part-container .container img{
+  .google-image-part .container img{
     display: block;
     margin: 20px auto;
   }
@@ -254,19 +275,76 @@ ul a{
     align-items: center;
   }
 
+  .logo img{
+    display: block;
+    margin: 30px auto;
+  }
+
   .faq{
     flex-flow: column;
     align-items: center;
     text-align: center;
-    padding: 30px 0;
   }
 
   .faq li{
-    padding-top: 10px;
+    padding-top: 15px;
   }
 
   .social-media-icon{
-    margin: 10px auto;
+    padding-left: 30px;
+    margin: 50px auto !important;
+  }
+}
+
+
+@media only screen and (max-width: 991px) {
+  .first-image .container{
+    display: block;
+  }
+
+  .img img{
+    padding-left: 100px;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .text h2, .text p{
+    text-align: center;
+  }
+
+  .access p{
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .img-2 img{
+    width: 100%;
+  }
+
+  .clipboard .container{
+    width: 90vw;
+    line-height: 1.5em;
+  }
+
+  .clipboard h1, p, .button-2{
+    margin-top: 20px;
+  }
+
+  .google-image-part img{
+    padding: 10px 30px;
+  }
+
+  .logo img{
+    padding: 0;
+  }
+
+  .faq{
+    padding: 0 2em;
+  }
+
+  .social-media-icon{
+    display: flex;
+    margin: 0 auto;
   }
 }
 
