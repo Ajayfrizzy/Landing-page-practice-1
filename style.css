@@ -114,22 +114,21 @@ button{
 .access img{
   width: 65%;
   margin-top: 70px;
-
 }
 
 .super{
   margin-top: 50px;
-  margin-bottom: 100px;
+  margin-bottom: 70px;
+}
+
+.super p{
+  margin-top: 0;
 }
 
 .after-super .container{
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   margin-bottom: 100px;
-}
-
-.after-super h2, p{
-  text-align: center;
 }
 
 .after-super img{
@@ -139,8 +138,10 @@ button{
 }
 
 .create, .plain, .sneak{
-  width: 28vw;
   line-height: 2em;
+  text-align: center;
+  flex: 1;
+  padding-right: 30px;
 }
 
 .google-image-part img{
@@ -206,6 +207,13 @@ ul a:hover{
   padding-right: 30px;
 }
 
+.attribution{
+  text-align: end;
+  padding-top: 0;
+  margin: 0;
+  background: #e3e3e3;
+}
+
 @media only screen and (max-width: 767px) {
   .history .container, .keep-track .container, .access .container, .clipboard .container{
     width: 100%;
@@ -251,13 +259,17 @@ ul a:hover{
     padding: 20px;
   }
 
+  .after-super p{
+    margin-top: 5px;
+  }
+
   .after-super img{
     padding-top: 30px;
   }
 
   .create, .plain, .sneak{
-    width: 85vw;
-    line-height: 0.9rem;
+    line-height: 1.5rem;
+    padding-right: 0;
   }
 
   .google-image-part .container{
